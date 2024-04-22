@@ -1,0 +1,1351 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.nav_bar {
+    height: 100vh;
+    width: 100%;
+    /* background-image: url(./Rimowa_IMG/HERO_DESK_PLP_NEW.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.video-background {
+    position: relative;
+    /* position: fixed; */
+    position: absolute;
+    z-index: -1;
+}
+
+#bg-video {
+    width: 100%;
+    height: 100%;
+    /* z-index: -1; */
+}
+
+
+.nav_content {
+    height: 22.3vh;
+    width: 100%;
+    color: white;
+    position: absolute;
+}
+
+.nav_content:hover {
+    background-color: #FFFFFF;
+    color: black;
+}
+
+.nav_content:hover a {
+    color: black;
+}
+
+
+.nav_contentTwo {
+    height: 22.3vh;
+    width: 100%;
+    position: absolute;
+}
+
+/* .nav_contentTwo:hover {
+    background-color: #FFFFFF;
+    color: black;
+}
+
+.nav_contentTwo:hover a {
+    color: black;
+} */
+
+.nav_contentUp {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 1cm;
+    padding-top: 0.3cm;
+    margin-left: 0.7cm;
+    margin-right: 0.7cm;
+    position: relative;
+}
+
+.nav_contentStart {
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 3;
+
+}
+
+.nav_contentMiddle {
+    width: 15%;
+    height: 40%;
+    /* background-color: blue; */
+}
+
+.nav_contentMiddle P {
+    font-size: 35.6px;
+    font-family: sans-serif;
+}
+
+.nav_contentEnd {
+    display: flex;
+    gap: 0.7cm;
+}
+
+.nav_contentEndInput {
+    width: 4.5cm;
+    height: 1cm;
+    outline: none;
+    border: 1px solid #dadada;
+    padding: 0cm 0.2cm;
+    display: flex;
+    gap: 0.13cm;
+    cursor: pointer;
+    font-family: sans-serif;
+    border-radius: 0.1cm;
+}
+
+.nav_contentEndInput p {
+    font-size: 14px;
+    line-height: 2.4;
+}
+
+.fa-magnifying-glass {
+    margin-top: 0.25cm;
+}
+
+.fa-user {
+    font-size: 0.6cm;
+    margin-top: 0.15cm;
+    cursor: pointer;
+}
+
+.fa-heart {
+    font-size: 0.6cm;
+    margin-top: 0.15cm;
+    cursor: pointer;
+}
+
+.profileHover:hover .profileHoverContent {
+    display: block;
+}
+
+.profileHoverContent {
+    height: 47vh;
+    width: 7cm;
+    padding: 0.3cm 0cm;
+    background-color: #FFFFFF;
+    position: absolute;
+    border-radius: 0.3cm;
+    box-shadow: -0.4px 1.5px 6px 1.2px silver;
+    top: 1;
+    right: 0;
+    margin-right: -0.2cm;
+    margin-top: 0.1cm;
+    display: none;
+}
+
+.myAccount {
+  color: black;
+  width: 100%;
+  height: 14%;
+  border-bottom: 1px solid black;
+}
+.myAccount p {
+    padding-top: 0.2cm;
+    letter-spacing: 0.03cm;
+    font-size: 14px;
+}
+
+.accountDetails {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.4cm;
+}
+
+.accountDetails button {
+    width: 93%;
+    height: 7vh;
+    margin: auto;
+    border-radius: 0.12cm;
+    border: 1px solid black;
+    font-size: 12px;
+    color: black;
+    cursor: pointer;
+}
+
+.accountDetails a {
+    text-decoration: none;
+}
+
+.myOrders {
+    color: black;
+    text-align: start;
+    margin-left: 0.3cm;
+    margin-top: 0.4cm;
+    font-size: 15px;
+}
+
+.myOrders p {
+    margin-bottom: 0.6cm;
+}
+
+.nav_contentDown {
+    text-align: center;
+}
+
+.nav_contentDown ul {
+    display: flex;
+    gap: 0.2cm;
+    list-style: none;
+}
+
+.nav_contentDown a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: sans-serif;
+    padding: 20px 10px 15px;
+    letter-spacing: 2px;
+}
+
+.nav_contentDown a:hover {
+    border-bottom: 1px solid black;
+}
+
+
+.nav_contentDownTwo {
+    text-align: center;
+    border-bottom: 1px solid rgb(113, 110, 110);
+    padding-bottom: 0.4cm;
+}
+
+.nav_contentDownTwo ul {
+    display: flex;
+    gap: 0.2cm;
+    list-style: none;
+}
+
+.nav_contentDownTwo a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-family: sans-serif;
+    padding: 20px 10px 15px;
+    letter-spacing: 2px;
+}
+
+.nav_contentDownTwo a:hover {
+    border-bottom: 1px solid black;
+}
+
+
+.hoverDisplay {
+    position: absolute;
+    height: auto;
+    padding-bottom: 1cm;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    margin-top: 0.42cm;
+    /* display: flex; */
+    display: none;
+    box-shadow: -0.4px 10px 6px 0.3px silver;
+}
+
+.hoverDisplayLuggage {
+    position: absolute;
+    height: auto;
+    padding-bottom: 1cm;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    margin-top: 0.42cm;
+    /* display: flex; */
+    display: none;
+    box-shadow: -0.4px 10px 6px 0.3px silver;
+}
+
+.hoverDisplayBags {
+    position: absolute;
+    height: auto;
+    padding-bottom: 1cm;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    margin-top: 0.42cm;
+    /* display: flex; */
+    display: none;
+    box-shadow: -0.4px 10px 6px 0.3px silver;
+}
+
+.hoverDisplayAccessories {
+    position: absolute;
+    height: auto;
+    padding-bottom: 1cm;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    margin-top: 0.42cm;
+    /* display: flex; */
+    display: none;
+    box-shadow: -0.4px 10px 6px 0.3px silver;
+}
+
+.hoverDisplaySpecialties {
+    position: absolute;
+    height: auto;
+    padding-bottom: 1cm;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    margin-top: 0.42cm;
+    /* display: flex; */
+    display: none;
+    box-shadow: -0.4px 10px 6px 0.3px silver;
+}
+
+.hoverDisplayService {
+    position: absolute;
+    height: auto;
+    padding-bottom: 1cm;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    margin-top: 0.42cm;
+    /* display: flex; */
+    display: none;
+    box-shadow: -0.4px 10px 6px 0.3px silver;
+}
+
+.hoverDisplayDiscover {
+    position: absolute;
+    height: auto;
+    padding-bottom: 1cm;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    margin-top: 0.42cm;
+    /* display: flex; */
+    display: none;
+    box-shadow: -0.4px 10px 6px 0.3px silver;
+}
+
+.neww:hover .hoverDisplay {
+    display: flex;
+}
+
+.LUGGAGE:hover .hoverDisplayLuggage {
+    display: flex;
+}
+
+.Bags:hover .hoverDisplayBags {
+    display: flex;
+}
+
+.Accessories:hover .hoverDisplayAccessories {
+    display: flex;
+}
+
+.Specialties:hover .hoverDisplaySpecialties {
+    display: flex;
+}
+
+.Service:hover .hoverDisplayService {
+    display: flex;
+}
+
+.Discover:hover .hoverDisplayDiscover {
+    display: flex;
+}
+
+.latest {
+    margin-bottom: 0.4cm;
+    text-align: start;
+    padding-top: 0.8cm;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: black;
+}
+
+.hoverDisplayContent {
+    width: 25%;
+    height: 100%;
+}
+
+.hoverDisplayContent ul {
+    display: block;
+    text-align: start;
+    margin-left: 0.7cm;
+}
+
+.hoverDisplayContent li {
+    margin-bottom: 0.3cm;
+}
+
+.hoverDisplayContent a {
+    padding: 0;
+    color: black;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.hoverDisplayContent a:hover {
+    color: rgb(96, 92, 92);
+    text-decoration: none;
+}
+
+.hoverDisplayCart {
+    width: 75%;
+    height: 100%;
+    display: flex;
+}
+
+.hoverDisplayCartStart {
+    width: 33.3%;
+    height: 100%;
+}
+
+.hoverDisplayCartMiddle {
+    width: 33.3%;
+    height: 100%;
+}
+
+.hoverDisplayCartEnd {
+    width: 33.3%;
+    height: 100%;
+}
+
+.hoverDisplayCartimg {
+    width: 94%;
+    height: 50%;
+    margin: auto;
+}
+
+.hoverDisplayCartimg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.3cm;
+    margin-top: 0.4cm;
+}
+
+.hoverDisplayContenttwo {
+    display: flex;
+    width: 48%;
+}
+
+.hoverDisplayCartLuggage {
+    width: 62%;
+    margin-left: 0.1cm;
+    padding-top: 0.3cm;
+}
+
+.CATEGORIES li {
+    font-size: 10px;
+}
+
+.luggageCartdisplay {
+    display: flex;
+    gap: 0.1cm;
+}
+
+.luggageCartdisplayOne {
+    width: 25%;
+    height: 35vh;
+}
+
+.luggageCartdisplayTwo {
+    width: 25%;
+    height: 35vh;
+}
+
+.luggageCartdisplayThree {
+    width: 25%;
+    height: 35vh;
+}
+
+.luggageCartdisplayFour {
+    width: 25%;
+    height: 35vh;
+}
+
+.luggImg {
+    width: 100%;
+    height: 67%;
+    background-color: #F9F9F9;
+}
+
+.AccessoriesCartdisplayOne {
+    width: 50%;
+    height: 40vh;
+}
+
+.AccessoriesCartdisplayTwo {
+    width: 50%;
+    height: 40vh;
+}
+
+
+
+.newRightDisplay {
+    width: 25%;
+    height: 100%;
+    margin-top: 0.7cm;
+    margin-left: 1cm;
+    font-family: sans-serif;
+}
+
+.newRightDisplay li {
+    list-style: none;
+    margin-bottom: 0.3cm;
+}
+
+.newRightDisplay a {
+    color: black;
+    text-decoration: none;
+}
+
+.newRightDisplay a:hover {
+    color: rgb(93, 91, 91);
+}
+
+.newLeftDisplay {
+    width: 75%;
+    height: 100%;
+}
+
+
+.heroText {
+    padding-top: 5cm;
+    text-align: center;
+}
+
+.heroText p {
+    font-size: 12px;
+    letter-spacing: 0.1cm;
+    color: white;
+}
+
+.Personalized {
+    margin: auto;
+    text-align: center;
+    width: 90%;
+}
+.Personalized p {
+    font-size: 45px;
+    color: #ffffff;
+}
+
+.Custom {
+    margin-top: 0.7cm;
+}
+.Custom p {
+    font-size: 18px;
+}
+
+.Customisebtn {
+    margin-top: 1cm;
+}
+.Customisebtn button {
+    width: 18%;
+    height: 7vh;
+    margin: auto;
+    border-radius: 0.12cm;
+    border: 0;
+    font-size: 14px;
+    color: rgb(53, 52, 52);
+    cursor: pointer;
+    letter-spacing: 0.1cm;
+    background-color: white;
+}
+
+.videoControll {
+    margin-top: 0.5cm;
+}
+
+#playPauseBtn {
+    width: 1.5cm;
+    height: 1.5cm;
+    border: 1.4px solid rgb(255, 255, 255);
+    border-radius: 1cm;
+    background-color: unset;
+    color: white;
+    cursor: pointer;
+}
+
+#playIcon {
+    font-size: 20px;
+}
+
+#pauseIcon {
+    display: none;
+    font-size: 20px;
+}
+
+
+
+.body_content {
+    height: 150vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    margin-top: 3.3cm;
+}
+
+.spinClassic {
+    width: 100%;
+    height: 40vh;
+    text-align: center;
+}
+
+.spinClassic p:nth-child(1) {
+    font-size: 40px;
+    padding-top: 1.3cm;
+    margin-bottom: 0.4cm;
+}
+
+.spinClassic p:nth-child(2) {
+    font-size: 16px;
+    width: 35%;
+    margin: auto;
+}
+
+.heroContentOne {
+    display: flex;
+    width: 100%;
+    height: 103vh;
+}
+
+.ContentOneRight {
+    width: 48%;
+    height: 100%;
+}
+
+.ContentOneRightimg {
+    width: 100%;
+    height: 100%;
+}
+
+.ContentOneLeft {
+    width: 52%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    
+}
+
+.ContentOneLeftText {
+    width: 62%;
+    height: 54%;
+    margin-top: 4.5cm;
+    margin-right: 0.6cm;
+}
+
+.ContentOneLeftText p:nth-child(1) {
+    font-size: 11px;
+    color: rgb(42, 40, 40);
+    margin-bottom: 0.4cm;
+}
+
+.ContentOneLeftText p:nth-child(2) {
+    font-size: 40px;
+    margin-bottom: 0.4cm;
+}
+
+.ContentOneLeftText p:nth-child(3) {
+    font-size: 18px;
+}
+
+.LeftTextbtn {
+    margin-top: 0.7cm;
+}
+
+.LeftTextbtn button {
+    height: 1cm;
+    width: 3.3cm;
+    border: 0;
+    border-radius: 0.07cm;
+    font-size: 12px;
+    letter-spacing: 0.04cm;
+    background-color: black;
+    color: white;
+}
+
+.classicCollection {
+    height: 22vh;
+    width: 100%;
+}
+
+.classicCollection p:nth-child(1) {
+    font-size: 6vh;
+    margin-left: 2.4cm;
+    margin-bottom: 0.7cm;
+    margin-top: 2cm;
+}
+
+.classicCollection p:nth-child(2) {
+    font-size: 3.4vh;
+    margin-left: 2.4cm;
+}
+
+.customise {
+    /* width: 100%; */
+    height: 83vh;
+    position: relative;
+}
+
+.allColors {
+    width: 20%;
+    height: 7vh;
+    margin-left: 2.4cm;
+}
+.allColors ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    line-height: 2.7;
+}
+
+.customiseCard {
+    width: 98.2%;
+    height: auto;
+    padding: 0.8cm 0.3cm;
+    display: flex;
+    gap: 0.2cm;
+    overflow-x: scroll;
+}
+
+.customiseCard::-webkit-scrollbar {
+    display: none;
+}
+
+.customiseCardOne {
+    /* width: 18%; */
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-color: #edeae8;
+    background-image: url(./Rimowa_IMG/97352004_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 0.1cm;
+}
+
+.customiseCardOne:hover {
+    background-image: url(./Rimowa_IMG/97352004_2.png);
+    transition: 0.50s;
+}
+
+
+.customiseCardTwo {
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-color: #edeae8;
+    background-image: url(./Rimowa_IMG/97373004_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 0.1cm;
+}
+
+.customiseCardTwo:hover {
+    background-image: url(./Rimowa_IMG/97373004_2.png);
+    transition: 0.50s;
+}
+
+
+.customiseCardThree {
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-color: #edeae8;
+    background-image: url(./Rimowa_IMG/97353014_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 0.1cm;
+}
+
+.customiseCardThree:hover {
+    background-image: url(./Rimowa_IMG/97353014_2.png);
+    transition: 0.50s;
+}
+
+.customiseCardFour {
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-color: #edeae8;
+    background-image: url(./Rimowa_IMG/97352004_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 0.1cm;
+}
+
+.customiseCardFour:hover {
+    background-image: url(./Rimowa_IMG/97352004_2.png);
+    transition: 0.50s;
+}
+
+
+.customiseCardFive {
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-color: #edeae8;
+    background-image: url(./Rimowa_IMG/97373014_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 0.1cm;
+}
+
+.customiseCardFive:hover {
+    background-image: url(./Rimowa_IMG/97373014_2.png);
+    transition: 0.50s;
+}
+
+
+.customiseCardSix {
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-color: #edeae8;
+    background-image: url(./Rimowa_IMG/97352004_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 0.1cm;
+}
+
+.customiseCardSix:hover {
+    background-image: url(./Rimowa_IMG/97373014_1.png);
+    transition: 0.50s;
+}
+
+
+.customiseCardSeven {
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-color: #edeae8;
+    background-image: url(./Rimowa_IMG/97373014_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 0.1cm;
+}
+
+.customiseCardSeven:hover {
+    background-image: url(./Rimowa_IMG/97373014_1.png);
+    transition: 0.50s;
+}
+
+
+.customiseCardEight {
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-color: #edeae8;
+    background-image: url(./Rimowa_IMG/97352004_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 0.1cm;
+}
+
+.customiseCardEight:hover {
+    background-image: url(./Rimowa_IMG/97373014_2.png);
+    transition: 0.50s;
+}
+
+
+.cardTop {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardTop p {
+    font-size: 13px;
+    margin-top: 0.1cm;
+}
+
+.bagColor img {
+    border-radius: 1cm;
+    width: 14%;
+    margin-right: 0.1cm;
+}
+
+.bagColor p {
+    margin-top: 0.3cm;
+}
+
+.Cabintext {
+    text-align: center;
+    margin-top: 5.7cm;
+}
+
+.Cabintext p {
+    font-size: 20px;
+}
+
+.controllArrow {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 5.2cm;
+    margin-right: 0.35cm;
+}
+
+.controllArrowLeft {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 5.2cm;
+    margin-left: 0.35cm;
+}
+
+#controllArrowbtn {
+    padding: 0.35cm;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1cm;
+    border: 0;
+    cursor: pointer;
+}
+
+#controllArrowLeftbtn {
+    padding: 0.35cm;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1cm;
+    border: 0;
+    cursor: pointer;
+}
+
+#controllArrowbtnEditor {
+    padding: 0.35cm;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1cm;
+    border: 0;
+    cursor: pointer;
+}
+
+#controllArrowLeftbtnEditor {
+    padding: 0.35cm;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1cm;
+    border: 0;
+    cursor: pointer;
+}
+
+.fa-arrow-right-long {
+    font-size: 19px;
+}
+
+.fa-arrow-left-long {
+    font-size: 19px;
+}
+
+
+.editorTopimg {
+    height: 95vh;
+    width: 100%;
+}
+
+.editorSimg {
+    width: 85%;
+    height: 90vh;
+    margin: auto;
+}
+
+
+
+
+.customiseCardOneEditor {
+    /* width: 18%; */
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-color: #edeae8;
+    background-image: url(./Rimowa_IMG/97375004-51500005-51001007-51401009_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 0.1cm;
+}
+
+.customiseCardOneEditor:hover {
+    background-image: url(./Rimowa_IMG/97375004-51500005-51001007-51401009_2.png);
+    transition: 0.50s;
+}
+
+
+.customiseCardTwoEditor {
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-color: #edeae8;
+    background-image: url(./Rimowa_IMG/97375014-51500004-51001008-51401010_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 0.1cm;
+}
+
+.customiseCardTwoEditor:hover {
+    background-image: url(./Rimowa_IMG/97375014-51500004-51001008-51401010_2.png);
+    transition: 0.50s;
+}
+
+
+.customiseCardThreeEditor {
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-color: #edeae8;
+    background-image: url(./Rimowa_IMG/97353004-51500009-51001006-51401008_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 0.1cm;
+}
+
+.customiseCardThreeEditor:hover {
+    background-image: url(./Rimowa_IMG/97353004-51500009-51001006-51401008_2.png);
+    transition: 0.50s;
+}
+
+.customiseCardFourEditor {
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-color: #edeae8;
+    background-image: url(./Rimowa_IMG/97353004-51500004-51001006-51401008_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 0.1cm;
+}
+
+.customiseCardFourEditor:hover {
+    background-image: url(./Rimowa_IMG/97353004-51500004-51001006-51401008_2.png);
+    transition: 0.50s;
+}
+
+
+.customiseCardFiveEditor {
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-color: #edeae8;
+    background-image: url(./Rimowa_IMG/97353004-51500006-51001008-51401005_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 0.1cm;
+}
+
+.customiseCardFiveEditor:hover {
+    background-image: url(./Rimowa_IMG/97353004-51500006-51001008-51401005_2.png);
+    transition: 0.50s;
+}
+
+
+.customiseCardSixEditor {
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-color: #edeae8;
+    background-image: url(./Rimowa_IMG/97353004-51500004-51001007-51401010_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 0.1cm;
+}
+
+.customiseCardSixEditor:hover {
+    background-image: url(./Rimowa_IMG/97353004-51500004-51001007-51401010_2.png);
+    transition: 0.50s;
+}
+
+
+.customiseCardSevenEditor {
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-color: #edeae8;
+    background-image: url(./Rimowa_IMG/97353004-51500009-51001007-51401009_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 0.1cm;
+}
+
+.customiseCardSevenEditor:hover {
+    background-image: url(./Rimowa_IMG/97353004-51500009-51001007-51401009_2.png);
+    transition: 0.50s;
+}
+
+
+.customiseCardEightEditor {
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-color: #edeae8;
+    background-image: url(./Rimowa_IMG/97352004_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 0.1cm;
+}
+
+.customiseCardEightEditor:hover {
+    background-image: url(./Rimowa_IMG/97373014_2.png);
+    transition: 0.50s;
+}
+
+
+
+.trace_jou {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    gap: 0.13cm;
+    text-align: center;
+}
+
+.trace_jouOne {
+    width: 33.3%;
+    height: 100%;
+    background-color: #F7F5F4;
+    cursor: pointer;
+}
+
+.trace_jouTwo {
+    width: 33.3%;
+    height: 100%;
+    background-color: #F7F5F4;
+    cursor: pointer;
+}
+
+.trace_jouThree {
+    width: 33.3%;
+    height: 100%;
+    background-color: #F7F5F4;
+    cursor: pointer;
+}
+
+
+.trace_jouOne p:nth-child(1) {
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-top: 1.7cm;
+    margin-bottom: 1cm;
+}
+
+.trace_jouOne p:nth-child(2) {
+    font-size: 31px;
+    margin-bottom: 1.5cm;
+}
+
+.trace_jouOne p:nth-child(3) {
+    font-size: 11px;
+    letter-spacing: 2.3px;
+    text-decoration: underline;
+}
+
+
+.customiesStore {
+    height: 90.5vh;
+    width: 100%;
+    background:url(./Rimowa_IMG/InStore.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.custStoreText {
+    padding-top: 4.7cm;
+}
+
+.custStoreText p:nth-child(1) {
+    font-size: 40px;
+    margin-bottom: 0.7cm;
+}
+
+.custStoreText p:nth-child(2) {
+    margin-bottom: 1cm;
+}
+
+.custStoreText button {
+    width: 3.6cm;
+    height: 1.2cm;
+    border-radius: 0.15cm;
+    border: 0;
+    background-color: rgb(244, 243, 243);
+}
+
+.custStoreText a {
+    text-decoration: none;
+    color: rgb(56, 56, 56);
+    letter-spacing: 0.06cm;
+    font-size: 12.3px;
+}
+
+.lugColEss {
+    height: 7vh;
+    width: 100%;
+}
+
+.lugColEss ul {
+    display: flex;
+    gap: 0.6cm;
+    line-height: 2.3;
+    margin-left: 1.5cm;
+}
+
+.lugColEss a {
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+}
+
+.shopPageCabinS {
+    height: auto;
+    width: 100%;
+    display: flex;
+    gap: 0.3cm;
+}
+
+.shopPageCabinSOne {
+    width: 55%;
+    height: auto;
+    cursor: zoom-in;
+    position: relative;
+    z-index: -1;
+    
+}
+
+.shopPageCabinSTwo {
+    width: 45%;
+    height: auto;
+}
+
+.Tryin3d {
+    width: 3cm;
+    height: 1.2cm;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    gap: 0.2cm;
+    line-height: 2.8;
+    margin-top: 0.7cm;
+    margin-right: 0.3cm;
+}
+
+.fa-red-river {
+    margin-top: 0.4cm;
+    margin-left: 0.3cm;
+}
+
+.shopPageCabinSTwoText {
+    margin-left: 1.5cm;
+}
+
+.shopPageCabinSTwoText p:nth-child(1) {
+    font-size: 11px;
+    color: rgb(67, 67, 67);
+    margin-bottom: 0.25cm;
+}
+
+.shopPageCabinSTwoText p:nth-child(2) {
+    font-size: 35px;
+    margin-bottom: 0.8cm;
+}
+
+.shopPageCabinSTwoText p:nth-child(3) {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1cm;
+}
+
+.shopPageCabinSTwoText a {
+    font-size: 13px;
+    color: black;
+}
+
+#selectCabinS {
+    width: 97%;
+    height: 1.3cm;
+    border-radius: 0.14cm;
+    background-color: unset;
+    margin-bottom: 0.7cm;
+}
+
+.GLOSScolor {
+    display: flex;
+    gap: 0.4cm;
+    width: 100%;
+    height: 6vh;
+    line-height: 2;
+}
+
+.GLOSScolor img {
+    width: 0.7cm;
+    height: 0.7cm;
+}
+
+.addtowishlist {
+    border-bottom: 1px solid black;
+    padding-bottom: 1.2cm;
+    display: flex;
+    gap: 0.2cm;
+    line-height: 3;
+}
+
+.sizeandweight {
+    margin-top: 2cm;
+}
+
+.sizeandweight ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6cm;
+    list-style: none;
+}
+
+.sizeandweight a {
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    font-weight: 600;
+    margin-right: 0.2cm;
+}
+
+.relatedProduct {
+    margin-top: 2cm;
+    margin-bottom: 2cm;
+    margin-left: 1cm;
+}
+
+.relatedProduct p:nth-child(1) {
+    font-size: 40px;
+    letter-spacing: 0.05cm;
+    margin-bottom: 0.8cm;
+}
+
+.relatedProduct p:nth-child(2) {
+    font-size: 15px;
+    padding-bottom: 0.12cm;
+    border-bottom: 1px solid black;
+    width: 10%;
+}
+
+.SIGNupHero {
+    height: 170vh;
+    width: 100%;
+    display: flex;
+}
+
+.SIGNupHeroOne {
+    width: 50%;
+    height: 100%;
+    background-image: url(./Rimowa_IMG/signupbackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.SIGNupHeroTwo {
+    width: 50%;
+    height: 100%;
+    background-color: #F7F5F4;
+}
+
+.SIGNupHeroTwoText {
+    height: 100%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: aqua;
+}
