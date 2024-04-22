@@ -7,14 +7,12 @@
 .nav_bar {
     height: 100vh;
     width: 100%;
-    /* background-image: url(./Rimowa_IMG/HERO_DESK_PLP_NEW.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .video-background {
     position: relative;
-    /* position: fixed; */
     position: absolute;
     z-index: -1;
 }
@@ -22,7 +20,6 @@
 #bg-video {
     width: 100%;
     height: 100%;
-    /* z-index: -1; */
 }
 
 
@@ -49,14 +46,6 @@
     position: absolute;
 }
 
-/* .nav_contentTwo:hover {
-    background-color: #FFFFFF;
-    color: black;
-}
-
-.nav_contentTwo:hover a {
-    color: black;
-} */
 
 .nav_contentUp {
     display: flex;
@@ -79,7 +68,6 @@
 .nav_contentMiddle {
     width: 15%;
     height: 40%;
-    /* background-color: blue; */
 }
 
 .nav_contentMiddle P {
@@ -247,7 +235,6 @@
     width: 100%;
     background-color: rgb(255, 255, 255);
     margin-top: 0.42cm;
-    /* display: flex; */
     display: none;
     box-shadow: -0.4px 10px 6px 0.3px silver;
 }
@@ -259,7 +246,6 @@
     width: 100%;
     background-color: rgb(255, 255, 255);
     margin-top: 0.42cm;
-    /* display: flex; */
     display: none;
     box-shadow: -0.4px 10px 6px 0.3px silver;
 }
@@ -271,7 +257,6 @@
     width: 100%;
     background-color: rgb(255, 255, 255);
     margin-top: 0.42cm;
-    /* display: flex; */
     display: none;
     box-shadow: -0.4px 10px 6px 0.3px silver;
 }
@@ -283,7 +268,6 @@
     width: 100%;
     background-color: rgb(255, 255, 255);
     margin-top: 0.42cm;
-    /* display: flex; */
     display: none;
     box-shadow: -0.4px 10px 6px 0.3px silver;
 }
@@ -295,7 +279,6 @@
     width: 100%;
     background-color: rgb(255, 255, 255);
     margin-top: 0.42cm;
-    /* display: flex; */
     display: none;
     box-shadow: -0.4px 10px 6px 0.3px silver;
 }
@@ -307,7 +290,6 @@
     width: 100%;
     background-color: rgb(255, 255, 255);
     margin-top: 0.42cm;
-    /* display: flex; */
     display: none;
     box-shadow: -0.4px 10px 6px 0.3px silver;
 }
@@ -319,7 +301,6 @@
     width: 100%;
     background-color: rgb(255, 255, 255);
     margin-top: 0.42cm;
-    /* display: flex; */
     display: none;
     box-shadow: -0.4px 10px 6px 0.3px silver;
 }
@@ -1343,9 +1324,69 @@
 }
 
 .SIGNupHeroTwoText {
-    height: 100%;
+    height: 90%;
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
-    background-color: aqua;
+    /* background-color: aqua; */
+    margin-top: 10%;
+}
+
+.inputField {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputField input {
+    width: 100%;
+    height: 7vh;
+    border-radius: 0.1cm;
+    border: 1px solid silver;
+    outline: none;
+}
+
+.inputField h5 {
+    margin-bottom: 0.13cm;
+}
+
+.forgotPassword {
+    margin-bottom: 1cm;
+}
+
+.forgotPassword a {
+     color: rgb(62, 61, 61);
+     font-size: 14px;
+}
+
+.signsecbut {
+    margin-bottom: 0.7cm;
+}
+
+.signsecbut button {
+    width: 100%;
+    height: 8vh;
+    background-color: black;
+    color: white;
+    border: 0;
+    border-radius: 0.1cm;
+}
+
+.dontHaveAcc p:nth-child(1) {
+     font-size: 20px;
+     margin-bottom: 0.15cm;
+     color: rgb(62, 61, 61);
+}
+
+.dontHaveAcc p:nth-child(2) {
+    font-size: 16px;
+    margin-bottom: 0.5cm;
+}
+
+.dontHaveAcc ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.3cm;
+    margin-left: 0.5cm;
+    margin-bottom: 1cm;
+    list-style:square;
 }
