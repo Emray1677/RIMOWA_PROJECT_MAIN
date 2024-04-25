@@ -1349,6 +1349,13 @@
     margin-bottom: 0.13cm;
 }
 
+.inputField select {
+    width: 100%;
+    height: 7vh;
+    border-radius: 0.1cm;
+    border: 1px solid silver;
+}
+
 .forgotPassword {
     margin-bottom: 1cm;
 }
@@ -1390,6 +1397,8 @@
     margin-bottom: 1cm;
     list-style:square;
 }
+
+
 
 
 
@@ -1668,6 +1677,424 @@
 
 .footerfifthSectionOne :nth-child(2){
     margin-top: 10px;
-
 }
+
+
+
+
+
+/* .customiseCardTwo {
+    width: 98.2%;
+    height: auto;
+    padding: 0.8cm 0.3cm;
+    display: flex;
+    gap: 0.2cm;
+    overflow-x: scroll;
+}
+
+.customiseCardTwo::-webkit-scrollbar {
+    display: none;
+} */
+
+
+.luggagecardOne {
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-image: url(./Remowa/82373624_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.luggagecardOne:hover {
+    background-image: url(./Remowa/82373624_2.png);
+    transition: 0.50s;
+}
+
+
+.luggagecardTwo {
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-image: url(./Remowa/82373684_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.luggagecardTwo:hover {
+    background-image: url(./Remowa/82373684_2.png);
+    transition: 0.50s;
+}
+
+
+.luggagecardThree {
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-image: url(./Remowa/82373704_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.luggagecardThree:hover {
+    background-image: url(./Remowa/82373704_2.png);
+    transition: 0.50s;
+}
+
+.luggagecardFour {
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-image: url(./Remowa/83252631_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.luggagecardFour:hover {
+    background-image: url(./Remowa/83252631_2.png);
+    transition: 0.50s;
+}
+
+
+.luggagecardFive {
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-image: url(./Remowa/83252661_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.luggagecardFive:hover {
+    background-image: url(./Remowa/83252661_2.png);
+    transition: 0.50s;
+}
+
+
+
+
+.luggageTwocardOne {
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-image: url(./Remowa/83252681_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.luggageTwocardOne:hover {
+    background-image: url(./Remowa/83252681_2.png);
+    transition: 0.50s;
+}
+
+
+.luggageTwocardTwo {
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-image: url(./Remowa/83253621_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.luggageTwocardTwo:hover {
+    background-image: url(./Remowa/83253621_2.png);
+    transition: 0.50s;
+}
+
+
+.luggageTwocardThree {
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-image: url(./Remowa/83253661_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.luggageTwocardThree:hover {
+    background-image: url(./Remowa/83253661_2.png);
+    transition: 0.50s;
+}
+
+.luggageTwocardFour {
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-image: url(./Remowa/83252681_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.luggageTwocardFour:hover {
+    background-image: url(./Remowa/83252681_2.png);
+    transition: 0.50s;
+}
+
+
+.luggageTwocardFive {
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-image: url(./Remowa/83253721_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.luggageTwocardFive:hover {
+    background-image: url(./Remowa/83253721_2.png);
+    transition: 0.50s;
+}
+
+
+
+.luggageThreecardOne {
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-image: url(./Remowa/83253731_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.luggageThreecardOne:hover {
+    background-image: url(./Remowa/83253731_2.png);
+    transition: 0.50s;
+}
+
+
+.luggageThreecardTwo {
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-image: url(./Remowa/83253741_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.luggageThreecardTwo:hover {
+    background-image: url(./Remowa/83253741_2.png);
+    transition: 0.50s;
+}
+
+
+.luggageThreecardThree {
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-image: url(./Remowa/83253831_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.luggageThreecardThree:hover {
+    background-image: url(./Remowa/83253831_2.png);
+    transition: 0.50s;
+}
+
+.luggageThreecardFour {
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-image: url(./Remowa/83263634_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.luggageThreecardFour:hover {
+    background-image: url(./Remowa/83263634_2.png);
+    transition: 0.50s;
+}
+
+
+.luggageThreecardFive {
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-image: url(./Remowa/83253661_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.luggageThreecardFive:hover {
+    background-image: url(./Remowa/83253661_2.png);
+    transition: 0.50s;
+}
+
+
+
+.luggageFourcardOne {
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-image: url(./Remowa/82373624_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.luggageFourcardOne:hover {
+    background-image: url(./Remowa/82373624_2.png);
+    transition: 0.50s;
+}
+
+
+.luggageFourcardTwo {
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-image: url(./Remowa/82373684_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.luggageFourcardTwo:hover {
+    background-image: url(./Remowa/82373684_2.png);
+    transition: 0.50s;
+}
+
+
+.luggageFourcardThree {
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-image: url(./Remowa/82373704_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.luggageFourcardThree:hover {
+    background-image: url(./Remowa/82373704_2.png);
+    transition: 0.50s;
+}
+
+.luggageFourcardFour {
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-image: url(./Remowa/83252631_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.luggageFourcardFour:hover {
+    background-image: url(./Remowa/83252631_2.png);
+    transition: 0.50s;
+}
+
+
+.luggageFourcardFive {
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-image: url(./Remowa/83252661_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.luggageFourcardFive:hover {
+    background-image: url(./Remowa/83252661_2.png);
+    transition: 0.50s;
+}
+
+
+
+.luggageFivecardOne {
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-image: url(./Remowa/83253691_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.luggageFivecardOne:hover {
+    background-image: url(./Remowa/83253691_2.png);
+    transition: 0.50s;
+}
+
+
+.luggageFivecardTwo {
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-image: url(./Remowa/83253721_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.luggageFivecardTwo:hover {
+    background-image: url(./Remowa/83253721_2.png);
+    transition: 0.50s;
+}
+
+
+.luggageFivecardThree {
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-image: url(./Remowa/83253731_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.luggageFivecardThree:hover {
+    background-image: url(./Remowa/83253731_2.png);
+    transition: 0.50s;
+}
+
+.luggageFivecardFour {
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-image: url(./Remowa/83253741_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.luggageFivecardFour:hover {
+    background-image: url(./Remowa/83253741_2.png);
+    transition: 0.50s;
+}
+
+
+.luggageFivecardFive {
+    width: 5.3cm;
+    height: 48.7vh;
+    padding: 0.3cm 0.5cm;
+    background-image: url(./Remowa/83253831_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.luggageFivecardFive:hover {
+    background-image: url(./Remowa/83253831_2.png);
+    transition: 0.50s;
+}
+
+
 
