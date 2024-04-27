@@ -866,19 +866,23 @@
                         <option value="">Ms</option>
                         <option value="">Mx</option>
                         <option value="">prefer not to say</option>
-                    </select> <br>
+                    </select>
+                    <span id="err"></span>
     
                 <div class="createAccInput1 inputField">
                     <h5>First Name*</h5>
-                    <input type="text"><br>
+                    <input type="text" id="firstNameNeeded">
+                    <span id="errII"></span>
                 </div>
     
                 <div class="createAccInput2 inputField">
                     <h5>Last Name*</h5>
-                    <input type="text"><br>
+                    <input type="text" id="lastNameNeeded">
+                    <span id="errIII"></span>
                 </div>
                     <h5 style="margin-bottom: 0.1cm;">Country/Region*</h5>
-                    <select name="">
+                    <select name="countryNeeded" id="countryNeeded">
+                        <option value="">Select counrty</option>
                         <option value=""> France</option>
                         <option value="">Afghanistan</option>
                         <option value="">Aland Islands</option>
@@ -974,24 +978,28 @@
                         <option value="">zambia</option>
                         <option value="">zimbabwe</option>
                     </select>
+                    <span id="errIV"></span>
 
                     
                 <section class="inputField" style="margin-bottom: 1cm;">
 
                     <h5>Email Address*</h5>
 
-                    <input type="email" id="">
+                    <input type="email" id="emailNeeded">
+                    <span id="errV"></span>
                   </section>
                     
                 <div class="createAccInput3 inputField">
                     <h5>Password*</h5>
-                    <input type="password"> 
+                    <input type="password" id="passwordNeeded"> 
                     <p style="font-family: sans-serif;font-size: 14px;margin-bottom: 0.8cm;">The password must contain at least 8 characters including 1 number, 1 upper and 1 lower case letter</p>
+                    <span id="errVI"></span>
                 </div>
     
                 <div class="createAccInput4 inputField">
                     <h5>Confirm Password*</h5>
-                    <input type="password"> 
+                    <input type="password" id="RenterPassword"> 
+                    <span id="errVII"></span>
                 </div>
                     <div class="createAccCheckbox">
                         <input type="checkbox" name="" id="">
@@ -1000,9 +1008,11 @@
                     
                     <div class="signsecbut">
 
-                        <button>Create Account</button> 
+                        <button type="button" id="createAccbtn" onclick="CreateAccoutMain()">Create Account</button> 
                         
                     </div>
+
+                    <script src="CreateAcc.js"></script>
                     
                 <div class="createAccBottom">
                     <p>*Mandatory field.</p>
