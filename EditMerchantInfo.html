@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="Rimowa.css">
+    <title>MERCHANT_SIGN_UP</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+     <link rel="stylesheet" href="Rimowa.css">
+
 </head>
 <body>
+    
+
 
     <section class="nav_bar" style="height: 22.3vh;">
 
@@ -58,7 +62,6 @@
                             <a href="./EditMerchantInfo.html" style="text-decoration: none;color: black;">Modify my Information</a>
                         </p>
 
-                        
                         <p>My Orders</p>
 
                         <p>Return a product</p>
@@ -850,80 +853,200 @@
 
     </section>
 
-    <section class="SIGNupHero">
+    <section class="SIGNupHero" style="height: 150vh;">
 
         <div class="SIGNupHeroOne">
 
         </div>
 
-        <div class="SIGNupHeroTwo">
+        <div class="SIGNupHeroTwo HideScrollBar" id="SIGNupHeroTwo" style="overflow-y: scroll;">
 
             <section class="SIGNupHeroTwoText">
 
                 <p style="font-size: 25px;font-weight: lighter;
-                margin-bottom: 0.3cm;color: rgb(62, 61, 61);
-                ">Sign in to your account</p>
-
-                <div style="margin-bottom: 1cm;font-size: 15px;color: rgb(62, 61, 61)">
-                    <p>If you already have a RIMOWA account,
-                         please sign in. We’ll use your existing
-                          details for a faster checkout.
-                    </p>
-                </div>
+                margin-bottom: 1cm;color: rgb(62, 61, 61);
+                ">Your Personaal Details</p>
 
                 
 
                 
                 <section class="inputField" style="margin-bottom: 1cm;">
 
+                    <h5>First Name*</h5>
+
+                    <input type="text" id="EditMerchantFirstName" style="background-color: unset;">
+                  </section>
+                
+                <section class="inputField" style="margin-bottom: 1cm;">
+
+                    <h5>Last Name*</h5>
+
+                    <input type="email" id="EditMerchantLastName" style="background-color: unset;">
+                  </section>
+                
+                <section class="inputField" style="margin-bottom: 1cm;">
+
                     <h5>Email Address*</h5>
 
-                    <input type="email" id="emailSignIn">
-                    <span id="mistake"></span>
+                    <input type="email" id="EditMerchantEmail" style="background-color: unset;">
                   </section>
 
-                <section class="inputField">
+                <section class="inputField" style="margin-bottom: 1cm;">
 
-                    <h5>Password*</h5>
+                    <h5>Phone*</h5>
 
-                    <input type="password" id="passwordSign">
-                    <span id="mistakeII"></span>
+                    <input type="text" id="EditMerchantPhone" style="background-color: unset;">
                   </section>
-                  
-                     <section class="forgotPassword">
-                       <a href="">Forgot your password ?</a>
-                     </section>
+
+                <section class="inputField" style="margin-bottom: 1cm;">
+
+                    <h5>Store Name*</h5>
+
+                    <input type="text" id="EditMerchantStoreName" style="background-color: unset;">
+                  </section>
+
+                <section class="inputField" style="margin-bottom: 1cm;">
+
+                    <h5>DESCP*</h5>
+
+                    <input type="text" id="EditMerchantDescp" style="background-color: unset;">
+                  </section>
+
+                <section class="inputField" style="margin-bottom: 1cm;">
+
+                    <h5>Icon*</h5>
+
+                    <!-- <form id="myForm" action="#" method="post" enctype="multipart/form-data"> -->
+                        <input type="file" id="EditfileInput" name="fileInput" accept="image/*" onchange="previewFile()" style="height: 5.35vh;padding-top: 1.65vh;background-color: unset;">
+                        <img id="preview" src="#" alt="Image Preview">
+                        <!-- <button type="submit">Submit</button> -->
+                    <!-- </form> -->
+
+                    <!-- <input type="file" name="imageFile" id=""> -->
+                  </section>
+
+                <section class="inputField" style="margin-bottom: 1cm;">
+
+                    <h5>Banner*</h5>
+
+                    <input type="file" id="EditfileInputTwo" name="fileInput" accept="image/*" onchange="previewFileTwo()" style="height: 5.35vh;padding-top: 1.65vh;background-color: unset;">
+                    <img id="previewTwo" src="#" alt="Image Preview">
+
+                  </section>
+
+                  <p style="font-size: 17px;font-weight: 600;margin-bottom: 0.3cm;">Sosial Media's</p>
+
+                <section class="inputField" style="margin-bottom: 1cm;">
+
+                    <h5 style="font-size: 10px;">X Account*</h5>
+
+                    <input type="text" id="EditXacc" style="background-color: unset;">
+                  </section>
+
+                <section class="inputField" style="margin-bottom: 1cm;">
+
+                    <h5 style="font-size: 10px;">FaceBook Account*</h5>
+
+                    <input type="text" id="EditFacebookAcc" style="background-color: unset;">
+                  </section>
+
+                <section class="inputField" style="margin-bottom: 1cm;">
+
+                    <h5 style="font-size: 10px;">Instagram Account*</h5>
+
+                    <input type="text" id="EditinstaAcc" style="background-color: unset;">
+                  </section>
+
+                <section class="inputField" style="margin-bottom: 1cm;">
+
+                    <h5>Other Phones*</h5>
+
+                    <input type="text" id="EditMerchantOtherPhones" style="background-color: unset;">
+                  </section>
 
                   <section class="signsecbut">
-                    <button type="button" id="SignInbtn" onclick="SigninPagebtn()">SIGN IN</button>
+                    <button id="MerchantEditSavebtn">SAVE CHANGES</button>
                   </section>
 
-                  <section class="dontHaveAcc">
-                    <p>Dont have an account?</p>
 
-                    <p>Get more out of your experience by signing up to:</p>
+                  <section class="signsecbut" style="margin-bottom: 0.5cm;">
+                    <button onclick="merchantchangepasswordDropDown()" id="MerchantChangePasswordDDbtn" style="margin-bottom: 2cm;background-color: unset;color: black;
+                    margin-top: 1cm;font-size: 16px;">CHANGE PASSWORD
+                    </button>
 
-                    <ul>
-                        <li>Manage your orders and returns</li>
-
-                        <li>Easily enjoy your lifetime guarantee</li>
-
-                        <li>Create a wish list</li>
-
-                        <li>Enjoy personalised recommendations</li>
-                    </ul>
+                    <button onclick="merchantchangepasswordDropUp()" id="MerchantChangePasswordDDbtnTwo" style="margin-bottom: 2cm;background-color: unset;color: black;
+                    margin-top: 1cm;font-size: 16px;">CHANGE PASSWORD
+                    </button>
                   </section>
 
-                  <section class="signsecbut" s>
-                    <button>CREATE ACCOUNT</button>
+
+                  <section id="MerchantEditPassword">
+                    
+                    <section class="inputField" style="margin-bottom: 1cm;">
+
+                        <h5>Current Password*</h5>
+    
+                        <div style="display: flex;width: 100%;">
+                            <input type="password" id="EditMerchantPassordCurrent" style="position: relative;">
+                            <button  onclick="togglePasswordVisibilityTwo()" class="passwordvisibilitybuttonTwo">
+                                <i class="fa-solid fa-eye" id="eyeonpasswordTwo"></i>
+    
+                                <i class="fa-solid fa-eye-slash" id="eyeOffpasswordTwo"></i>
+                            </button>
+                        
+                        </div>
+    
+                        </section>
+
+                      <section class="inputField" style="margin-bottom: 1cm;">
+
+                        <h5>New Password*</h5>
+    
+                        <div style="display: flex;width: 100%;">
+                            <input type="password" id="EditMerchantPassordNewpassword" style="position: relative;">
+                            <button  onclick="togglePasswordVisibilityTwo()" class="passwordvisibilitybuttonTwo">
+                                <i class="fa-solid fa-eye" id="eyeonpasswordTwo"></i>
+    
+                                <i class="fa-solid fa-eye-slash" id="eyeOffpasswordTwo"></i>
+                            </button>
+                        
+                        </div>
+    
+                        <p style="font-family: sans-serif;font-size: 14px;margin-top: 0.2cm;">
+                            8 - 255 characters</p>
+                      </section>
+
+                      <section class="inputField" style="margin-bottom: 1cm;">
+
+                        <h5>Confirm New Password*</h5>
+    
+                        <div style="display: flex;width: 100%;">
+                            <input type="password" id="EditMerchantPassordConfirmnewpss" style="position: relative;">
+                            <button  onclick="togglePasswordVisibilityTwo()" class="passwordvisibilitybuttonTwo">
+                                <i class="fa-solid fa-eye" id="eyeonpasswordTwo"></i>
+    
+                                <i class="fa-solid fa-eye-slash" id="eyeOffpasswordTwo"></i>
+                            </button>
+                        
+                        </div>
+    
+                        </section>
+
+                        <section class="signsecbut">
+                            <button id="MerchantPasswordSavebtn" style="margin-bottom: 2cm;">SAVE CHANGES</button>
+                          </section>
+                
                   </section>
 
-            </section>
+           
+           
+           
+                </section>
 
         </div>
 
     </section>
-    <script src="RimowaSigin.js"></script>
+
 
 
     <footer class="remowaFooter">
@@ -1095,7 +1218,10 @@
 
     </footer>
 
-    <script src="./Rimowa.js"></script>
+
+    <!-- <script src="./Rimowa.js"></script> -->
+    <script src="./EditMerchantInfo.js"></script>
+    <script src="./FileInputPrev.js"></script>
     <script src="https://kit.fontawesome.com/e45170711e.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="Rimowa.css">
 </head>
 <body>
@@ -862,7 +863,7 @@
 
                 <p style="font-size: 25px;font-weight: lighter;
                 margin-bottom: 0.3cm;color: rgb(62, 61, 61);
-                ">Sign in to your account</p>
+                ">Sign in to your Merchant account</p>
 
                 <div style="margin-bottom: 1cm;font-size: 15px;color: rgb(62, 61, 61)">
                     <p>If you already have a RIMOWA account,
@@ -878,16 +879,22 @@
 
                     <h5>Email Address*</h5>
 
-                    <input type="email" id="emailSignIn">
-                    <span id="mistake"></span>
+                    <input type="email" id="MerchantSignInEmail">
                   </section>
 
                 <section class="inputField">
 
                     <h5>Password*</h5>
 
-                    <input type="password" id="passwordSign">
-                    <span id="mistakeII"></span>
+                    <div style="display: flex;width: 100%;">
+                        <input type="password" id="MerchantSignInPassword" style="position: relative;">
+                        <button  onclick="togglePasswordVisibility()" class="passwordvisibilitybutton">
+                            <i class="fa-solid fa-eye" class="toggle-password" id="eyeonpassword"></i>
+
+                            <i class="fa-solid fa-eye-slash" id="eyeOffpassword"></i>
+                        </button>
+                    
+                    </div>
                   </section>
                   
                      <section class="forgotPassword">
@@ -895,7 +902,7 @@
                      </section>
 
                   <section class="signsecbut">
-                    <button type="button" id="SignInbtn" onclick="SigninPagebtn()">SIGN IN</button>
+                    <button id="MerchantSignInBtn" onclick="LogInMerchantAccount()">SIGN IN</button>
                   </section>
 
                   <section class="dontHaveAcc">
@@ -914,8 +921,10 @@
                     </ul>
                   </section>
 
-                  <section class="signsecbut" s>
-                    <button>CREATE ACCOUNT</button>
+                  <section class="signsecbut" >
+                    <a href="./CreateMerchantAcc.html">
+                        <button>CREATE MERCHANT ACCOUNT</button>
+                    </a>
                   </section>
 
             </section>
@@ -923,7 +932,6 @@
         </div>
 
     </section>
-    <script src="RimowaSigin.js"></script>
 
 
     <footer class="remowaFooter">
@@ -1095,7 +1103,9 @@
 
     </footer>
 
+    <!-- <script src="./Rimowa.js"></script> -->
     <script src="./Rimowa.js"></script>
+    <!-- <script src="./MerchantSignIn.js"></script> -->
     <script src="https://kit.fontawesome.com/e45170711e.js" crossorigin="anonymous"></script>
 </body>
 </html>
