@@ -58,15 +58,15 @@ let EditMerchantFirstName = document.getElementById('EditMerchantFirstName');
 let EditMerchantLastName = document.getElementById('EditMerchantLastName');
 let EditMerchantEmail = document.getElementById('EditMerchantEmail');
 let EditMerchantPhone = document.getElementById('EditMerchantPhone');
-let EditMerchantStoreName = document.getElementById('EditMerchantStoreName');
-let EditMerchantFirstName = document.getElementById('EditMerchantFirstName');
-let EditMerchantFirstName = document.getElementById('EditMerchantFirstName');
-let EditMerchantFirstName = document.getElementById('EditMerchantFirstName');
-let EditMerchantFirstName = document.getElementById('EditMerchantFirstName');
-let EditMerchantFirstName = document.getElementById('EditMerchantFirstName');
-let EditMerchantFirstName = document.getElementById('EditMerchantFirstName');
-let EditMerchantFirstName = document.getElementById('EditMerchantFirstName');
-let EditMerchantFirstName = document.getElementById('EditMerchantFirstName');
+// let EditMerchantStoreName = document.getElementById('EditMerchantStoreName');
+// let EditMerchantFirstName = document.getElementById('EditMerchantFirstName');
+// let EditMerchantFirstName = document.getElementById('EditMerchantFirstName');
+// let EditMerchantFirstName = document.getElementById('EditMerchantFirstName');
+// let EditMerchantFirstName = document.getElementById('EditMerchantFirstName');
+// let EditMerchantFirstName = document.getElementById('EditMerchantFirstName');
+// let EditMerchantFirstName = document.getElementById('EditMerchantFirstName');
+// let EditMerchantFirstName = document.getElementById('EditMerchantFirstName');
+// let EditMerchantFirstName = document.getElementById('EditMerchantFirstName');
 
 
 function EditMerchantAccountsDetailsInpt(){
