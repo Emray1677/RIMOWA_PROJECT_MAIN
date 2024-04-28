@@ -123,7 +123,7 @@ button {
 }
 
 .profileHoverContent {
-    height: 47vh;
+    height: auto;
     width: 7cm;
     padding: 0.3cm 0cm;
     background-color: #FFFFFF;
@@ -2197,4 +2197,66 @@ button {
 #preview {
     max-width: 300px;
     margin-top: 20px;
+}
+
+#MerchantModifinginfo {
+    display: none;
+}
+
+
+
+
+/* .password-toggle {
+    position: relative;
+}
+
+.password-toggle input[type="password"] {
+    padding-right: 30px; /* Make space for the toggle button */
+/* }
+
+.password-toggle .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    cursor: pointer;
+} */ 
+
+#eyeOffpassword {
+    display: none;
+}
+
+.passwordvisibilitybutton {
+    position: absolute;
+    margin-left: 10.7cm;
+    margin-top: 0.35cm;
+    cursor: pointer;
+    background-color: unset;
+    border: 0;
+}
+
+.passwordvisibilitybuttonTwo {
+    /* position: absolute; */
+    position: relative;
+    margin-left: -1cm;
+    margin-top: -0.3cm;
+    cursor: pointer;
+    background-color: unset;
+    border: 0;
+}
+
+.passwordvisibilitybuttonTwo i {
+    position: absolute;
+}
+
+#eyeOffpasswordTwo {
+    display: none;
+}
+
+#MerchantChangePasswordDDbtnTwo {
+    display: none;
+}
+
+#MerchantEditPassword {
+    display: none;
 }
