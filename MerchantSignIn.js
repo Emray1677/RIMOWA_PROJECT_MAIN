@@ -33,14 +33,14 @@
 
 // MerchantSignInBtn.addEventListener('click', LogInMerchantAccount)
 
-let MerchantSignInBtn = document.getElementById("MerchantSignInBtn")
+// let MerchantSignInBtn = document.getElementById("MerchantSignInBtn")
 let error = document.getElementById("error");
 
 
 
 function merchantsignInEmailDetail(){
 
-    let merchantsignInEmailAddress = document.getElementById(' ').value;
+    let merchantsignInEmailAddress = document.getElementById('MerchantSignInEmail').value;
     if ( merchantsignInEmailAddress ==="") {
         document.getElementById('wrong').innerHTML = "please enter email";
         wrong.style.color = "red"
