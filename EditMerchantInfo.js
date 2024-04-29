@@ -58,18 +58,38 @@ let EditMerchantFirstName = document.getElementById('EditMerchantFirstName');
 let EditMerchantLastName = document.getElementById('EditMerchantLastName');
 let EditMerchantEmail = document.getElementById('EditMerchantEmail');
 let EditMerchantPhone = document.getElementById('EditMerchantPhone');
-// let EditMerchantStoreName = document.getElementById('EditMerchantStoreName');
-// let EditMerchantFirstName = document.getElementById('EditMerchantFirstName');
-// let EditMerchantFirstName = document.getElementById('EditMerchantFirstName');
-// let EditMerchantFirstName = document.getElementById('EditMerchantFirstName');
-// let EditMerchantFirstName = document.getElementById('EditMerchantFirstName');
-// let EditMerchantFirstName = document.getElementById('EditMerchantFirstName');
-// let EditMerchantFirstName = document.getElementById('EditMerchantFirstName');
-// let EditMerchantFirstName = document.getElementById('EditMerchantFirstName');
-// let EditMerchantFirstName = document.getElementById('EditMerchantFirstName');
+let EditMerchantStoreName = document.getElementById('EditMerchantStoreName');
+let EditMerchantDescp = document.getElementById('EditMerchantDescp');
+let EditfileInput = document.getElementById('EditfileInput');
+let EditfileInputTwo = document.getElementById('EditfileInputTwo');
+let EditMerchantState = document.getElementById('EditMerchantState');
+let EditMerchantDistrict = document.getElementById('EditMerchantDistrict');
+let EditXacc = document.getElementById('EditXacc');
+let EditFacebookAcc = document.getElementById('EditFacebookAcc');
+let EditinstaAcc = document.getElementById('EditinstaAcc');
+let EditMerchantOtherPhones = document.getElementById('EditMerchantOtherPhones');
 
 
 function EditMerchantAccountsDetailsInpt(){
+
+    let MerchantEditinfoFromInput = {
+        first_name: EditMerchantFirstName,
+        last_name:"Doe",
+        email:"ap@gmail.com",
+        phone:"0901234567",
+        store_name:"Nicolas Aluminium",
+        descp:"All is well that ends well",
+        icon:"",
+        banner:"",
+         state: "",
+            district: "",
+            social_media: {
+                    x: "",
+                    face_book: "",
+                    instagram: ""
+            },
+        phones:["098767887",98657654]
+    }
 
     $(document).ready(function () {
         $.ajax({
