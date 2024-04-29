@@ -880,6 +880,7 @@
                     <h5>Email Address*</h5>
 
                     <input type="email" id="MerchantSignInEmail">
+                    <span id="wrong"></span>
                   </section>
 
                 <section class="inputField">
@@ -888,7 +889,8 @@
 
                     <div style="display: flex;width: 100%;">
                         <input type="password" id="MerchantSignInPassword" style="position: relative;">
-                        <button  onclick="togglePasswordVisibility()" class="passwordvisibilitybutton">
+                        <span id="wrongII"></span>
+                        <button  onclick="togglePasswordVisibility()" id="MerchantSigninbtn">
                             <i class="fa-solid fa-eye" class="toggle-password" id="eyeonpassword"></i>
 
                             <i class="fa-solid fa-eye-slash" id="eyeOffpassword"></i>
@@ -921,6 +923,7 @@
                     </ul>
                   </section>
 
+                  
                   <section class="signsecbut" >
                     <a href="./CreateMerchantAcc.html">
                         <button>CREATE MERCHANT ACCOUNT</button>
@@ -1105,7 +1108,7 @@
 
     <!-- <script src="./Rimowa.js"></script> -->
     <script src="./Rimowa.js"></script>
-    <!-- <script src="./MerchantSignIn.js"></script> -->
+    <script src="./MerchantSignIn.js"></script>
     <script src="https://kit.fontawesome.com/e45170711e.js" crossorigin="anonymous"></script>
 </body>
 </html>

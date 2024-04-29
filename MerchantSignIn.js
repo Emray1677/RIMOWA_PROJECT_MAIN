@@ -32,3 +32,43 @@
 // }
 
 // MerchantSignInBtn.addEventListener('click', LogInMerchantAccount)
+
+let MerchantSignInBtn = document.getElementById("MerchantSignInBtn")
+let error = document.getElementById("error");
+
+
+
+function merchantsignInEmailDetail(){
+
+    let merchantsignInEmailAddress = document.getElementById(' ').value;
+    if ( merchantsignInEmailAddress ==="") {
+        document.getElementById('wrong').innerHTML = "please enter email";
+        wrong.style.color = "red"
+        return false;
+       
+    }else{
+        document.getElementById('wrong').innerHTML = "";
+        return true;
+    } 
+}
+
+function merchantsignInPasswordDetail(){
+
+    let merchantsignInPasswordAddress = document.getElementById('MerchantSignInPassword').value;
+    if ( merchantsignInPasswordAddress ==="") {
+        document.getElementById('wrongII').innerHTML = "please enter password";
+        wrongII.style.color = "red"
+        return false;
+    }else{
+        document.getElementById('wrongII').innerHTML = "";
+        return true;
+    }
+}
+
+
+function LogInMerchantAccount(){
+    merchantsignInEmailDetail()
+    merchantsignInPasswordDetail()
+    
+
+}

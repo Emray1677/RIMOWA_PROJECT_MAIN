@@ -32,5 +32,6 @@ function signInPasswordDetail(){
 function SigninPagebtn(){
     signInEmailDetail()
     signInPasswordDetail()
+    
 
 }
