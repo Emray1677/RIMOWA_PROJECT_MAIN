@@ -33,14 +33,14 @@
 
 // MerchantSignInBtn.addEventListener('click', LogInMerchantAccount)
 
-let MerchantSignInBtn = document.getElementById("MerchantSignInBtn")
+// let MerchantSignInBtn = document.getElementById("MerchantSignInBtn")
 let error = document.getElementById("error");
 
 
 
 function merchantsignInEmailDetail(){
 
-    let merchantsignInEmailAddress = document.getElementById(' ').value;
+    let merchantsignInEmailAddress = document.getElementById('MerchantSignInEmail').value;
     if ( merchantsignInEmailAddress ==="") {
         document.getElementById('wrong').innerHTML = "please enter email";
         wrong.style.color = "red"
@@ -55,13 +55,15 @@ function merchantsignInEmailDetail(){
 function merchantsignInPasswordDetail(){
 
     let merchantsignInPasswordAddress = document.getElementById('MerchantSignInPassword').value;
-    if ( merchantsignInPasswordAddress ==="") {
+
+    if ( merchantsignInPasswordAddress === "") {
         document.getElementById('wrongII').innerHTML = "please enter password";
         wrongII.style.color = "red"
         return false;
     }else{
         document.getElementById('wrongII').innerHTML = "";
         return true;
+
     }
 }
 
@@ -69,6 +71,4 @@ function merchantsignInPasswordDetail(){
 function LogInMerchantAccount(){
     merchantsignInEmailDetail()
     merchantsignInPasswordDetail()
-    
-
 }
