@@ -2226,14 +2226,14 @@ button {
     display: none;
 }
 
-.passwordvisibilitybutton {
+/* .passwordvisibilitybutton {
     position: absolute;
     margin-left: 10.7cm;
     margin-top: 0.35cm;
     cursor: pointer;
     background-color: unset;
     border: 0;
-}
+} */
 
 .passwordvisibilitybuttonTwo {
     /* position: absolute; */
@@ -2258,5 +2258,13 @@ button {
 }
 
 #MerchantEditPassword {
+    display: none;
+}
+
+#eyeOffpasswordThree {
+    display: none;
+}
+
+#eyeOffpasswordFour {
     display: none;
 }
