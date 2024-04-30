@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="merchantDashboard.css">
+</head>
+<body>
+
+    <header class="merchantDashboardNav">
+        <ul class="merchantDashboardNavUl">
+           <a href="merchantDashboard.html"><li id="CreateCatNav">Create Categories</li></a> 
+           <a href="merchantCreateProduct.html"><li id="CreateProNav">Create Product</li></a> 
+           <a href="merchantProductCreated.html"><li id="ProCreatedNav">Product Created</li></a> 
+           <a href=""><li id="CatCreatedNav">Categories Created</li></a> 
+           <a href=""> <li id="OrdersNav">Orders</li></a>
+        </ul>
+    </header>
+
+    <div class="createProduct" id="createProduct">
+        <div class="createProductDiv">
+            <input placeholder="Title" type="text"><br>
+
+            <input placeholder="Brand" type="text"><br>
+
+            <input placeholder="Quantity" type="number" min="2" max="5"><br>
+
+            <input placeholder="Price" type="number"><br>
+
+            <select id="" class="MerchantCurrency">
+                <option value="">Select currency</option>
+                <option value="">Naria</option>
+                <option value="">Dollar</option>
+                <option value="">Chinese Yuan</option>
+                <option value="">Euro</option>
+               
+            </select><br>
+           
+            <input placeholder="colour"  type="text"><br>
+
+            <input placeholder="size" type="number"><br>
+
+            <input placeholder="Description" type="text"><br>
+
+            <input placeholder="Select Image" type="file"><br>
+            
+        </div>
+        <button>Summit</button>
+    </div>
+    
+</body>
+</html>
