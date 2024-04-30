@@ -125,6 +125,44 @@ function togglePasswordVisibilityTwo() {
   }
 }
 
+function togglePasswordVisibilityThree() {
+  var RenterPassword = document.getElementById("RenterPassword");
+  var eyeonpasswordThree = document.getElementById("eyeonpasswordThree");
+  var eyeOffpasswordThree = document.getElementById("eyeOffpasswordThree");
+  // var toggleButton = document.querySelector(".toggle-password i");
+
+  if (RenterPassword.type === "password") {
+    RenterPassword.type = "text";
+      // toggleButton.src = "eye-off-icon.svg"; // Change to an eye-off icon
+      eyeOffpasswordThree.style.display = 'block';
+      eyeonpasswordThree.style.display = 'none';
+  } else {
+    RenterPassword.type = "password";
+      // toggleButton.src = "eye-icon.svg"; // Change to an eye icon
+      eyeOffpasswordThree.style.display = 'none';
+      eyeonpasswordThree.style.display = 'block';
+  }
+}
+
+function togglePasswordVisibilityFour() {
+  var passwordNeeded = document.getElementById("passwordNeeded");
+  var eyeonpasswordFour = document.getElementById("eyeonpasswordFour");
+  var eyeOffpasswordFour = document.getElementById("eyeOffpasswordFour");
+  // var toggleButton = document.querySelector(".toggle-password i");
+
+  if (passwordNeeded.type === "password") {
+    passwordNeeded.type = "text";
+      // toggleButton.src = "eye-off-icon.svg"; // Change to an eye-off icon
+      eyeOffpasswordFour.style.display = 'block';
+      eyeonpasswordFour.style.display = 'none';
+  } else {
+    passwordNeeded.type = "password";
+      // toggleButton.src = "eye-icon.svg"; // Change to an eye icon
+      eyeOffpasswordFour.style.display = 'none';
+      eyeonpasswordFour.style.display = 'block';
+  }
+}
+
 
 
 

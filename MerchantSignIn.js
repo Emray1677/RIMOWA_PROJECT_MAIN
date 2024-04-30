@@ -55,13 +55,15 @@ function merchantsignInEmailDetail(){
 function merchantsignInPasswordDetail(){
 
     let merchantsignInPasswordAddress = document.getElementById('MerchantSignInPassword').value;
-    if ( merchantsignInPasswordAddress ==="") {
+
+    if ( merchantsignInPasswordAddress === "") {
         document.getElementById('wrongII').innerHTML = "please enter password";
         wrongII.style.color = "red"
         return false;
     }else{
         document.getElementById('wrongII').innerHTML = "";
         return true;
+
     }
 }
 
@@ -69,6 +71,4 @@ function merchantsignInPasswordDetail(){
 function LogInMerchantAccount(){
     merchantsignInEmailDetail()
     merchantsignInPasswordDetail()
-    
-
 }
