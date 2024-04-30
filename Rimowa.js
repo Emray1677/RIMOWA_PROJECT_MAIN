@@ -163,6 +163,21 @@ function togglePasswordVisibilityFour() {
   }
 }
 
+function togglePasswordVisibilityFive() {
+  var passwordSign = document.getElementById("passwordSign");
+  var eyeonpasswordFive = document.getElementById("eyeonpasswordFive");
+  var eyeOffpasswordFive = document.getElementById("eyeOffpasswordFive");
+  // var toggleButton = document.querySelector(".toggle-password i");
 
-
-
+  if (passwordSign.type === "password") {
+    passwordSign.type = "text";
+      // toggleButton.src = "eye-off-icon.svg"; // Change to an eye-off icon
+      eyeOffpasswordFive.style.display = 'block';
+      eyeonpasswordFive.style.display = 'none';
+  } else {
+    passwordSign.type = "password";
+      // toggleButton.src = "eye-icon.svg"; // Change to an eye icon
+      eyeOffpasswordFive.style.display = 'none';
+      eyeonpasswordFive.style.display = 'block';
+  }
+}

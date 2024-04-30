@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="Rimowa.css">
 </head>
 <body>
@@ -886,7 +887,18 @@
 
                     <h5>Password*</h5>
 
-                    <input type="password" id="passwordSign">
+                    
+                    <div style="display: flex;width: 100%;">
+                        <input type="password" id="passwordSign" style="position: relative;">
+                        <button  onclick="togglePasswordVisibilityFive()" class="passwordvisibilitybuttonTwo">
+                            <i class="fa-solid fa-eye" id="eyeonpasswordFive"></i>
+
+                            <i class="fa-solid fa-eye-slash" id="eyeOffpasswordFive"></i>
+                        </button>
+                    
+                    </div>
+
+                    <!-- <input type="password" id="passwordSign"> -->
                     <span id="mistakeII"></span>
                   </section>
                   
@@ -925,7 +937,6 @@
         </div>
 
     </section>
-    <script src="RimowaSigin.js"></script>
 
 
     <footer class="remowaFooter">
@@ -1098,6 +1109,7 @@
     </footer>
 
     <script src="./Rimowa.js"></script>
+    <script src="RimowaSigin.js"></script>
     <script src="https://kit.fontawesome.com/e45170711e.js" crossorigin="anonymous"></script>
 </body>
 </html>

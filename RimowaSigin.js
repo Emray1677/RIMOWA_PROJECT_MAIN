@@ -29,9 +29,43 @@ function signInPasswordDetail(){
     }
 }
 
+
+
+let emailSignIn = document.getElementById('emailSignIn');
+let passwordSign = document.getElementById('passwordSign');
+
+
+function CreatingUserAccount(){
+
+  let UserLogInInputDetails = {
+    email: emailSignIn.value,
+    password: passwordSign.value,
+  }
+
+  console.log(UserLogInInputDetails);
+ 
+  $(document).ready(function () {
+    $.ajax({
+        type: "post",
+        url: "http://ecommerce.reworkstaging.name.ng/v2/users",
+        header: "application/json",
+        data: UserLogInInputDetails,
+        success: function (res) {
+            console.log(res);
+            window.location.href = "luggage.html";
+        },
+        error: function (error) {
+            console.log("error", error);
+        }
+    })
+})
+}
+
+
+
+
 function SigninPagebtn(){
     signInEmailDetail()
     signInPasswordDetail()
-    
-
+    CreatingUserAccount()
 }

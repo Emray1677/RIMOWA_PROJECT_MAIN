@@ -96,13 +96,54 @@ function RePasswordlDetail(){
     }
 }
 
+
+
+let firstNameNeeded = document.getElementById('firstNameNeeded');
+let lastNameNeeded = document.getElementById('lastNameNeeded');
+let emailNeeded = document.getElementById('emailNeeded');
+let UserPhone = document.getElementById('UserPhone');
+let passwordNeeded = document.getElementById('passwordNeeded');
+
+
+function CreatingUserAccount(){
+
+  let UserInputDetails = {
+    first_name: firstNameNeeded.value,
+    last_name: lastNameNeeded.value,
+    email: emailNeeded.value,
+    phone: UserPhone.value,
+    password: passwordNeeded.value,
+  }
+
+  console.log(UserInputDetails);
+ 
+  $(document).ready(function () {
+    $.ajax({
+        type: "post",
+        url: "http://ecommerce.reworkstaging.name.ng/v2//users",
+        header: "application/json",
+        data: UserInputDetails,
+        success: function (res) {
+            console.log(res);
+            window.location.href = "RimowaSignIn.html";
+        },
+        error: function (error) {
+            console.log("error", error);
+        }
+    })
+})
+}
+
+
+
+
 function CreateAccoutMain(){
     titleCreateAccDetail()
     firstNAmeDetail()
     lastNAmeDetail()
     countryDetail()
-    emailDetail()
+    // emailDetail()
     passwordlDetail()
     RePasswordlDetail()
-
+    CreatingUserAccount()
 }
