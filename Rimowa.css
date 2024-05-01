@@ -2198,6 +2198,10 @@ button {
     max-width: 300px;
     margin-top: 20px;
 }
+#previewTwo {
+    max-width: 300px;
+    margin-top: 20px;
+}
 
 #MerchantModifinginfo {
     display: none;
