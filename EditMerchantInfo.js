@@ -50,7 +50,7 @@ function merchantchangepasswordDropUp(){
     MerchantChangePasswordDDbtn.style.display = 'block';
     // SIGNupHeroTwo.scrollBy({
     //     top: -30,
-    //       behavior: 'smooth',
+    //c       behavior: 'smooth',
     //   });
 }
 
@@ -74,32 +74,33 @@ function EditMerchantAccountsDetailsInpt(){
 
     let MerchantEditinfoFromInput = {
         first_name: EditMerchantFirstName,
-        last_name:"Doe",
-        email:"ap@gmail.com",
-        phone:"0901234567",
-        store_name:"Nicolas Aluminium",
-        descp:"All is well that ends well",
-        icon:"",
-        banner:"",
-         state: "",
-            district: "",
+        last_name:EditMerchantLastName,
+        email:EditMerchantEmail,
+        phone:EditMerchantPhone,
+        store_name:EditMerchantStoreName,
+        descp:EditMerchantDescp,
+        icon: EditfileInput,
+        banner: EditfileInputTwo,
+         state:EditMerchantState ,
+            district: EditMerchantDistrict,
             social_media: {
-                    x: "",
-                    face_book: "",
-                    instagram: ""
+                    x: EditXacc,
+                    face_book: EditFacebookAcc,
+                    instagram:  EditinstaAcc,
             },
-        phones:["098767887",98657654]
+        phones:["098767887",""]
     }
 
     $(document).ready(function () {
         $.ajax({
-            type: "put",
-            url: "http://ecommerce.reworkstaging.name.ng/v2/merchants/:662ccac2f7192e0c5d7043e4",
-            header: "application/json",
-            data: MerchantSignInInputDetails,
+            type: "post",
+            url: "http://ecommerce.reworkstaging.name.ng/v2/merchants",
+            // header: "application/json",
+            data: MerchantEditinfoFromInput,
+            dataType: "json",
             success: function (res) {
                 console.log(res);
-                MerchantModifinginfo.style.display= "block";
+                // MerchantModifinginfo.style.display= "block";
                 // window.location.href = "MerchantSignIn.html"
             },
             error: function (error) {

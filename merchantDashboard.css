@@ -24,11 +24,17 @@
    
 }
 
+.merchantDashboardNavUl a{
+    text-decoration: none;
+    
+}
+
 .merchantDashboardNavUl li{
-    font-size: large;
+    font-size: 13.6px;
     font-weight: bolder;
     cursor: pointer;
     color: black;
+    word-spacing: 1px;
     /* list-style: none; */
     
 }
@@ -143,4 +149,29 @@
     background-color: gray;
     color: white;
     font-size: 20px;
+}
+
+.AllCategories{
+    background-color: whitesmoke;
+    list-style: none;
+    padding-top: 30px;
+    margin-left: 350px;
+    width: 40%;
+    height: 35vh;
+    margin-top: 60px;
+    border-radius: 15px;
+    
+}
+
+.AllCategories ul{
+    list-style: none;
+    padding-left:4cm;
+    
+}
+
+.AllCategories li{
+    font-size: 20px;
+    margin-top: 9px;
+    margin-left: 15px;
+    
 }
