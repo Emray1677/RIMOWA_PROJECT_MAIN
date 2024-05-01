@@ -4,27 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="merchantDashboard.css">
 </head>
 <body>
     <header class="merchantDashboardNav">
         <ul class="merchantDashboardNavUl">
+<<<<<<< HEAD
             <a href="merchantDashboard.html"><li id="CreateCatNav">Create Categories</li></a> 
             <a href="merchantCreateProduct.html"><li id="CreateProNav">Create Product</li></a> 
             <a href="merchantProductCreated.html"><li id="ProCreatedNav">All Product</li></a> 
             <a href="AllCategories.html"><li id="CatCreatedNav">All Categories</li></a> 
+=======
+            <a id="CreateCatNav" href="merchantDashboard.html"><li>Create Categories</li></a> 
+            <a id="CreateProNav" href="merchantCreateProduct.html"><li>Create Product</li></a> 
+            <a id="ProCreatedNav" href="merchantProductCreated.html"><li>Product Created</li></a> 
+            <a href=""><li id="CatCreatedNav">Categories Created</li></a> 
+>>>>>>> 733162c15f0a7d61e239e2c97d520ccd1bbe536d
             <a href=""> <li id="OrdersNav">Orders</li></a>
             <a href=""><li>Log Out</li></a>
          </ul>
     </header>
 
+
     <main class="CategoriesAddition" id="CategoriesAddition">
+<<<<<<< HEAD
         <div class="Categoriesdiv">
         
         <input type="text" class="CategoriesAddSelect" id="CategoriesAddSelect">
         <br> <br>
             <button onclick="MerchantCategoriesBtn" id="MerchantCategoriesBtn">Summit</button>
+=======
+
+        <div class="creatingcatebtn">
+                <button id="creatingcategorydropbtn" onclick=" firstbtndropdowncat()">Create Category +</button>
+>>>>>>> 733162c15f0a7d61e239e2c97d520ccd1bbe536d
         </div>
+
+        <div class="Categoriesdiv" id="Categoriesdiv">
+            <p style="font-size: 18px;font-weight: 600;">Create your Category</p>
+        
+            <section class="inputficate">
+                <h5>Category Name*</h5>
+                <input type="text" id="CategoryName" style="background-color: unset;">
+            </section>
+        
+            <section class="inputficate">
+                <h5>Select cate Image*</h5>
+                <input type="file" id="Categoryimage" name="fileInput" accept="image/*" onchange="previewFileThree()" style="height: 5.35vh;padding-top: 1.65vh;">
+                <img id="previewThree" src="#" alt="Image Preview">
+
+            </section>
+        
+            <div class="createmerchantcategorybtn">
+                <button onclick=" secondbtndropdowncat()" style="border: 2px solid black;background-color: unset;color: black;">Cancel</button>
+                <button onclick=" CreatingCategory()" id="MerchantCategoriesBtn">Summit</button>
+            </div>
+        </div>
+
     </main>
 
    
@@ -32,5 +69,6 @@
     
     
     <script src="./merchantDashboard.js"></script>
+    <script src="./FileInputPrev.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-let MerchantCategoriesBtn = document.getElementById('MerchantCategoriesBtn');
+// let MerchantCategoriesBtn = document.getElementById('MerchantCategoriesBtn');
 
 $(document).ready(function(){
     $("#MerchantCategoriesBtn").click(function(e) {

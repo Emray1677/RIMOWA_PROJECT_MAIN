@@ -86,9 +86,9 @@ function EditMerchantAccountsDetailsInpt(){
             social_media: {
                     x: EditXacc,
                     face_book: EditFacebookAcc,
-                    instagram:  EditinstaAcc,
+                    instagram:  EditinstaAcc
             },
-        phones:["098767887",""]
+        phones:["098767887","0983989494"]
     }
 
     $(document).ready(function () {

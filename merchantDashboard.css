@@ -1,32 +1,33 @@
 *{
     padding: 0;
     margin: 0;
-    font-style:  sans-serif;
+    font-family:  sans-serif;
 }
 
 .merchantDashboardNav{
     height: 15vh;
-    width: auto;
+    width: 100%;
     background-color: #f7f5f4;
+    background-color: rgb(228, 228, 246);
     border-bottom: 1px solid black;
 }
 
 .merchantDashboardNavUl{
-    /* height: 10vh; */
-    /* width: 100%; */
     display: flex;
-    /* justify-content: space-between; */
-    gap: 160px;
-    padding: 30px;
-    padding-left: 90px;
-    padding-right: 20px;
+    justify-content: space-around;
     list-style: none;
+    line-height: 4.3;
    
 }
 
+<<<<<<< HEAD
 .merchantDashboardNavUl a{
     text-decoration: none;
     
+=======
+.merchantDashboardNavUl a {
+    text-decoration: none;
+>>>>>>> 733162c15f0a7d61e239e2c97d520ccd1bbe536d
 }
 
 .merchantDashboardNavUl li{
@@ -34,47 +35,78 @@
     font-weight: bolder;
     cursor: pointer;
     color: black;
+<<<<<<< HEAD
     word-spacing: 1px;
     /* list-style: none; */
     
+=======
+>>>>>>> 733162c15f0a7d61e239e2c97d520ccd1bbe536d
 }
 
 .CategoriesAddition{
-    /* display: flex; */
-    /* justify-content: end; */
-    /* background-color: whitesmoke; */
-    width: 90%;
-    height: 80vh;
-    padding-left: 2cm;
-    padding-top: 2cm;
+    width: 100%;
+    height: 110vh;
+    background-color: #F2F7FB;
+    position: relative;
 }
 
 .Categoriesdiv{
-    /* margin-left: 450px; */
     margin: auto;
-    background-color: whitesmoke;
+    background-color: rgb(228, 228, 246);
     width: 50%;
-    height: 50vh;
+    height: 70vh;
+    padding: 0.3cm 0.4cm;
     border-radius: 15px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
-.CategoriesAddition input{
-    margin-left: 150px;
-    width: 45%;
-    height: 8vh;
-    /* padding-top: 70px; */
-    margin-top: 90px;
-   
+
+#previewThree {
 
 }
+
+.inputficate {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1cm;
+    margin-top: 0.5cm;
+}
+
+.inputficate input {
+    width: 50%;
+    height: 7vh;
+    border-radius: 0.1cm;
+    border: 1px solid rgb(0, 0, 0);
+    outline: none;
+}
+
+#previewThree {
+    max-width: 200px;
+    margin-top: -60px;
+    display: none;
+}
+
+.createmerchantcategorybtn {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .Categoriesdiv button{
     width: 150px;
     height: 8vh;
-    margin-left: 210px;
     margin-top: 30px;
     color: white;
     background-color: black;
     border-radius: 5px;
+    border: 0;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.012cm; 
+    cursor: pointer;
 }
 
 /* #createProductDiv{
@@ -151,6 +183,7 @@
     font-size: 20px;
 }
 
+<<<<<<< HEAD
 .AllCategories{
     background-color: whitesmoke;
     list-style: none;
@@ -174,4 +207,30 @@
     margin-top: 9px;
     margin-left: 15px;
     
+=======
+.creatingcatebtn {
+    display: flex;
+    justify-content: end;
+    /* margin-top: 0.5cm; */
+    margin-right: 0.5cm;
+}
+
+.creatingcatebtn button {
+    height: 1.3cm;
+    width: 4.5cm;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    border: 0;
+    border-radius: 0.1cm;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 0.01cm;
+    margin-bottom: 0.4cm;
+    margin-top: 0.5cm;
+}
+
+#Categoriesdiv {
+    display: none;
+>>>>>>> 733162c15f0a7d61e239e2c97d520ccd1bbe536d
 }
