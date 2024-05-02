@@ -30,6 +30,8 @@ function secondbtndropdowncat(){
     Categoriesdiv.style.display = 'none';
 }
 
+
+
 let CategoryName = document.getElementById('CategoryName');
 let Categoryimage = document.getElementById('Categoryimage');
 
