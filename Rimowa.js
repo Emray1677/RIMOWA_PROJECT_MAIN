@@ -39,7 +39,7 @@ function CreatingMerchantAccount(){
         data: MerchantInputDetails,
         success: function (res) {
             console.log(res);
-            window.location.href = "MerchantSignIn.html"
+            // window.location.href = "MerchantSignIn.html"
         },
         error: function (error) {
             console.log("error", error);
