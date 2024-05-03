@@ -75,7 +75,7 @@ function LogInMerchantAccount(){
         success: function (res) {
             console.log(res);
             MerchantModifinginfo.style.display= "block";
-            // window.location.href = "MerchantSignIn.html"
+            window.location.href = "merchantDashboard.html"
         },
         error: function (error) {
             console.log("error", error);
