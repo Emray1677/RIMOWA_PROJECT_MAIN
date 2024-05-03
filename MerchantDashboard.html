@@ -1,31 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="merchantdashboard.css">
-</head>
-<body>
-    <header class="merchantDashboardNav">
-        <ul class="merchantDashboardNavUl">
-           <a href="merchantDashboard.html"><li id="CreateCatNav">Create Categories</li></a> 
-           <a href="merchantCreateProduct.html"><li id="CreateProNav">Create Product</li></a> 
-           <a href="merchantProductCreated.html"><li id="ProCreatedNav">All Product</li></a> 
-           <a href="AllCategories.html"><li id="CatCreatedNav">All Categories</li></a> 
-           <a href=""> <li id="OrdersNav">Orders</li></a>
-           <a href=""><li>Log Out</li></a>
-        </ul>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="merchantdashboard.css">
+    </head>
+    <body>
+        
+        <header class="merchantDashboardNav" >
+            <ul class="merchantDashboardNavul">
+            <a id="CreateCatNav" href="merchantDashboard.html">
+                <li>Create Categories</li>
+            </a>
+            <a id="CreateProNav" href="merchantCreateProduct.html">
+                <li>Create Product</li>
+            </a>
+            <a id="ProCreatedNav" href="merchantProductcreated.html">
+                <li>Product Created</li>
+            </a>
+            <a href="">
+            <li id="CatCreatedNav">Categories Created</li>
+            </a>
+            
+            <a href="">
+            <li id="OrdersNav">orders</li>
+            </a>
+            
+            </ul>
+            </header>
 
-    <div class="CategoriesAddition">
-        <div class="Categoriesdiv">
-            <input type="text">
-            <br>
-            <button>Summit</button>
+            <main class="CategoriesAddition" id="CategoriesAddition" >
+                <div class="creatingcatebtn">
+                <button id="creatingcategorydropbtn" onclick=" firstbtndropdowncat ()">Create Category +</button>
+                </div>
+            
+                <div class="Categoriesdiv" id="Categoriesdiv" style="display: block;"> <p style="font-size: 18px;font-weight: 600;">Create your Category</p>
+                 <section class="inputficate"> <h5>Category Name*</h5>
+                <input type="text" id="CategoryName" style="background-color: unset;"> </section>
+                <section class="inputficate">
+                <h5>Select cate Image*</h5>
+                <input type="file" id="Categoryimage" name="fileInput"
+                accept="image/*" onchange="previewFileThree()" style="height: 5.35vh;padding-top: 1.65vh;">
+                <img id="previewThree" src="#" alt="Image Preview">
+                </section>
+                <div class="createmerchantcategorybtn">
 
-        </div>
-    </div>
-    
-</body>
-</html>
+                <button onclick=" secondbndropdowncat()" style="border: 2px solid black; background-color: unset; color: black;">Cancel</button>
+
+                <button onclick="CreatingCategory()" id="MerchantCategoriestn">Summit</button>
+                  </div>
+                 </div>
+                </main>
+
+    <!-- <script src="./merchantDashboard.js"></script> -->
+    <script src="./FileInputPrev.js"></script>
+    <script src="./merchantDashboard.js"></script>
+    </body>
+    </html>
