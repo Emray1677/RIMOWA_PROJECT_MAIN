@@ -45,16 +45,18 @@
 .Categoriesdiv{
     /* margin: auto; */
     background-color: rgb(228, 228, 246);
-    width: 50%;
+    width: 55%;
     height: 70vh;
     padding-top: 2cm;
     border-radius: 15px;
-    margin-left: 1cm;
-
-    
+    margin-left: 7cm;  
 }
 
-#previewThree {
+.Categoriesdiv p{
+    margin-left: 230px;
+    margin-bottom: 2cm;
+
+
 
 }
 
@@ -63,6 +65,7 @@
     flex-direction: column;
     gap: 0.1cm;
     margin-top: 0.5cm;
+    margin-left: 2cm;
 }
 
 .inputficate input {
@@ -97,11 +100,10 @@
     font-weight: 600;
     letter-spacing: 0.012cm; 
     cursor: pointer;
+    margin: 1cm;
 }
 
-/* #createProductDiv{
-    display: none;
-} */
+
 
 .createProduct{
     background-color: whitesmoke;
