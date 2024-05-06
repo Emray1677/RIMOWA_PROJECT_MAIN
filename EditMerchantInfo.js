@@ -146,3 +146,85 @@ function EditMerchantAccountsDetailsInpt(){
     })
     
   }
+
+
+
+
+
+
+  
+let EditUserFirstName = document.getElementById('EditUserFirstName');
+let EditUserLastName = document.getElementById('EditUserLastName');
+let EditUserEmail = document.getElementById('EditUserEmail');
+let EditUserPhone = document.getElementById('EditUserPhone');
+  
+
+function EditUserAccountsDetailsInpt(){
+
+    let MerchantEditinfoFromInput = {
+        first_name: EditUserFirstName.value,
+        last_name: EditUserLastName.value,
+        email: EditUserEmail.value,
+        phone: EditUserPhone.value,
+    }
+
+    console.log(MerchantEditinfoFromInput);
+
+    $(document).ready(function () {
+        $.ajax({
+            type: "put",
+            url: "http://ecommerce.reworkstaging.name.ng/v2/users/662f960bf7192e0c5d709829",
+            header: "application/json",
+            data: MerchantEditinfoFromInput,
+            dataType: "json",
+            success: function (res) {
+                console.log(res);
+                // MerchantModifinginfo.style.display= "block";
+                // window.location.href = "MerchantSignIn.html"
+            },
+            error: function (error) {
+                console.log("error", error);
+            }
+        })
+    })
+  }
+
+
+
+  let EditUserPassordCurrent = document.getElementById('EditUserPassordCurrent');
+  let EditUserPassordNewpassword = document.getElementById('EditUserPassordNewpassword');
+
+  function EditUserPasswordDetials(){
+
+    let userpasswordeditinputdet = {
+        old_password: EditUserPassordCurrent.value,
+        new_password: EditUserPassordNewpassword.value,
+
+        
+    }
+
+    
+    console.log(userpasswordeditinputdet);
+
+    $(document).ready(function () {
+        $.ajax({
+            type: "put",
+            url: "http://ecommerce.reworkstaging.name.ng/v2/users/662f960bf7192e0c5d709829/change-passwd",
+            header: "application/json",
+            data: userpasswordeditinputdet,
+            dataType: "json",
+            success: function (res) {
+                console.log(res);
+                EditUserPassordCurrent.value = ""
+                EditUserPassordNewpassword.value = ""
+                // MerchantModifinginfo.style.display= "block";
+                // window.location.href = "MerchantSignIn.html"
+            },
+            error: function (error) {
+                console.log("error", error);
+            }
+        })
+    })
+    
+  }
+

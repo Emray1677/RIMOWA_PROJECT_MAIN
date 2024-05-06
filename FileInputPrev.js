@@ -57,3 +57,42 @@ function previewFile() {
     }
   }
   
+  function previewFileFour() {
+    const previewFour = document.getElementById('previewFour');
+    const EditfileInput = document.getElementById('EditfileInput');
+    const file = EditfileInput.files[0];
+    const reader = new FileReader();
+  
+    reader.onloadend = function () {
+      previewFour.src = reader.result;
+      previewFour.style.display = 'block';
+    }
+  
+    if (file) {
+      reader.readAsDataURL(file);
+    } else {
+      previewFour.src = '';
+      previewFour.style.display = 'none';
+    }
+  }
+  
+  
+  function previewFileFive() {
+    const previewFive = document.getElementById('previewFive');
+    const EditfileInputTwo = document.getElementById('EditfileInputTwo');
+    const file = EditfileInputTwo.files[0];
+    const reader = new FileReader();
+  
+    reader.onloadend = function () {
+      previewFive.src = reader.result;
+      previewFive.style.display = 'block';
+    }
+  
+    if (file) {
+      reader.readAsDataURL(file);
+    } else {
+      previewFive.src = '';
+      previewFive.style.display = 'none';
+    }
+  }
+  
