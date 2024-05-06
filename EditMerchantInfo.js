@@ -73,29 +73,31 @@ let EditMerchantOtherPhones = document.getElementById('EditMerchantOtherPhones')
 function EditMerchantAccountsDetailsInpt(){
 
     let MerchantEditinfoFromInput = {
-        first_name: EditMerchantFirstName,
-        last_name:EditMerchantLastName,
-        email:EditMerchantEmail,
-        phone:EditMerchantPhone,
-        store_name:EditMerchantStoreName,
-        descp:EditMerchantDescp,
-        icon: EditfileInput,
-        banner: EditfileInputTwo,
-         state:EditMerchantState ,
-            district: EditMerchantDistrict,
+        first_name: EditMerchantFirstName.value,
+        last_name:EditMerchantLastName.value,
+        email:EditMerchantEmail.value,
+        phone:EditMerchantPhone.value,
+        store_name:EditMerchantStoreName.value,
+        descp:EditMerchantDescp.value,
+        icon: EditfileInput.value,
+        banner: EditfileInputTwo.value,
+         state:EditMerchantState.value,
+            district: EditMerchantDistrict.value,
             social_media: {
-                    x: EditXacc,
-                    face_book: EditFacebookAcc,
-                    instagram:  EditinstaAcc
+                    x: EditXacc.value,
+                    face_book: EditFacebookAcc.value,
+                    instagram:  EditinstaAcc.value,
             },
         phones:["098767887","0983989494"]
     }
 
+    console.log(MerchantEditinfoFromInput);
+
     $(document).ready(function () {
         $.ajax({
-            type: "post",
-            url: "http://ecommerce.reworkstaging.name.ng/v2/merchants",
-            // header: "application/json",
+            type: "put",
+            url: "http://ecommerce.reworkstaging.name.ng/v2/merchants/663403e8f7192e0c5d7a5e0d",
+            header: "application/json",
             data: MerchantEditinfoFromInput,
             dataType: "json",
             success: function (res) {
@@ -110,3 +112,37 @@ function EditMerchantAccountsDetailsInpt(){
     })
   }
 
+  let EditMerchantPassordCurrent = document.getElementById('EditMerchantPassordCurrent');
+  let EditMerchantPassordNewpassword = document.getElementById('EditMerchantPassordNewpassword');
+
+  function EditMerchantPasswordDetials(){
+
+    let Merchantpasswordeditinputdet = {
+        old_password: EditMerchantPassordCurrent.value,
+        new_password: EditMerchantPassordNewpassword.value,
+    }
+
+    
+    console.log(Merchantpasswordeditinputdet);
+
+    $(document).ready(function () {
+        $.ajax({
+            type: "put",
+            url: "http://ecommerce.reworkstaging.name.ng/v2/merchants/663403e8f7192e0c5d7a5e0d/change-passwd",
+            header: "application/json",
+            data: Merchantpasswordeditinputdet,
+            dataType: "json",
+            success: function (res) {
+                console.log(res);
+                EditMerchantPassordCurrent.value = ""
+                EditMerchantPassordNewpassword.value = ""
+                // MerchantModifinginfo.style.display= "block";
+                // window.location.href = "MerchantSignIn.html"
+            },
+            error: function (error) {
+                console.log("error", error);
+            }
+        })
+    })
+    
+  }
