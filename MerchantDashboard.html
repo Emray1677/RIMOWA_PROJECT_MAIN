@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,34 +9,23 @@
     </head>
     <body>
         
-        <header class="merchantDashboardNav" >
-            <ul class="merchantDashboardNavul">
-            <a id="CreateCatNav" href="merchantDashboard.html">
-                <li>Create Categories</li>
-            </a>
-            <a id="CreateProNav" href="merchantCreateProduct.html">
-                <li>Create Product</li>
-            </a>
-            <a id="ProCreatedNav" href="merchantProductcreated.html">
-                <li>Product Created</li>
-            </a>
-            <a href="">
-            <li id="CatCreatedNav">Categories Created</li>
-            </a>
-            
-            <a href="">
-            <li id="OrdersNav">orders</li>
-            </a>
-            
+        <header class="merchantDashboardNav">
+            <ul class="merchantDashboardNavUl">
+               <a href="merchantDashboard.html"><li id="CreateCatNav">Create Categories</li></a> 
+               <a href="merchantCreateProduct.html"><li id="CreateProNav">Create Product</li></a> 
+               <a href="merchantProductCreated.html"><li id="ProCreatedNav">All Product</li></a> 
+               <a href="AllCategories.html"><li id="CatCreatedNav">All Categories</li></a> 
+               <a href=""> <li id="OrdersNav">Orders</li></a>
+               <a href="MerchantSignIn.html"><li>Log Out</li></a>
             </ul>
-            </header>
+        </header>
 
             <main class="CategoriesAddition" id="CategoriesAddition" >
                 <div class="creatingcatebtn">
                 <button id="creatingcategorydropbtn" onclick=" firstbtndropdowncat ()">Create Category +</button>
                 </div>
             
-                <div class="Categoriesdiv" id="Categoriesdiv" style="display: block;"> <p style="font-size: 18px;font-weight: 600;">Create your Category</p>
+                <div class="Categoriesdiv" id="Categoriesdiv" style="display: block;"> <p style="font-size: 24px;font-weight: 600;">Create your Category</p>
                  <section class="inputficate"> <h5>Category Name*</h5>
                 <input type="text" id="CategoryName" style="background-color: unset;"> </section>
                 <section class="inputficate">
@@ -52,7 +41,7 @@
                 <button onclick="CreatingCategory()" id="MerchantCategoriestn">Summit</button>
                   </div>
                  </div>
-                </main>
+            </main>
 
     <!-- <script src="./merchantDashboard.js"></script> -->
     <script src="./FileInputPrev.js"></script>
